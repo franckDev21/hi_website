@@ -1,0 +1,21 @@
+.humberger-menu {
+    width: 31px;
+    cursor: pointer;
+    & > span{
+      
+      transition: 0.3s ease transform, .3s opacity ease .1s;
+    }
+  }
+  
+  #humberger-menu:checked ~ .humberger-menu{
+    & > span:nth-child(2){
+      transform : translateX(-100%);
+      opacity : 0;
+    }
+    & > span:first-child{
+      transform: translateY(10px) rotateZ(45deg);
+    }
+    & > span:last-child{
+      transform: translateY(-6px) rotateZ(-45deg);
+    }
+  }

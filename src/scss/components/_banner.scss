@@ -1,0 +1,16 @@
+.banner{
+    
+    &__btn-left,
+    &__btn-right{
+        opacity: 0;
+        transform: scale(0);
+    }
+    
+    &:hover{
+        .banner__btn-left,
+        .banner__btn-right{
+            opacity: 1;
+            transform: scale(1);
+        } 
+    }
+}

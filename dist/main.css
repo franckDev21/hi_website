@@ -1,0 +1,125 @@
+.banner__btn-left, .banner__btn-right {
+  opacity: 0;
+  transform: scale(0);
+}
+.banner:hover .banner__btn-left,
+.banner:hover .banner__btn-right {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.humberger-menu {
+  width: 31px;
+  cursor: pointer;
+}
+.humberger-menu > span {
+  transition: 0.3s ease transform, 0.3s opacity ease 0.1s;
+}
+
+#humberger-menu:checked ~ .humberger-menu > span:nth-child(2) {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+#humberger-menu:checked ~ .humberger-menu > span:first-child {
+  transform: translateY(10px) rotateZ(45deg);
+}
+#humberger-menu:checked ~ .humberger-menu > span:last-child {
+  transform: translateY(-6px) rotateZ(-45deg);
+}
+
+.about__title::after {
+  width: 52px;
+  bottom: -20px;
+  height: 4px;
+  left: 0;
+  top: auto;
+  position: absolute;
+  content: "";
+  border: 4px solid transparent;
+  border-bottom: 0;
+  border-top-color: #2d4a8a;
+}
+.about__img > div:first-of-type {
+  min-width: 180px;
+  width: 180px;
+  font-size: 18px;
+  line-height: 24px;
+  width: 180px;
+  padding: 20px;
+}
+
+.nav__link {
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.nav__link .menu {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  width: 300%;
+  opacity: 0;
+  transform: scale(0);
+  top: 100%;
+  transition: opacity 0.3s ease-in-out;
+  overflow: hidden;
+}
+.nav__link .menu__link {
+  border-bottom: 0.5px solid #eee;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  font-size: 13px;
+}
+.nav__link .menu__link::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scaleX(0);
+  display: inline-block;
+  content: "";
+  width: 8px;
+  background-color: #2F4A8A;
+  height: 2px;
+  transform-origin: left center;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.nav__link .menu__link > span {
+  transition: margin-left 0.3s ease-in-out;
+}
+.nav__link .menu__link:hover {
+  background-color: rgb(247, 249, 254);
+}
+.nav__link .menu__link:hover::before {
+  opacity: 1;
+  transform: translateY(-50%) scaleX(1);
+}
+.nav__link .menu__link:hover > span {
+  display: inline-block;
+  margin-left: 16px;
+}
+.nav__link::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  background-color: #2F4A8A;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.14rem;
+  transition: transform 0.2s ease-in-out;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+.nav__link:hover::after {
+  transform: scaleX(1);
+}
+.nav__link:hover > .menu {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*# sourceMappingURL=main.css.map */

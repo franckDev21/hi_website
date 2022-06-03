@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  max-width: 1170px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* 
+  ==============================
+    COLORS
+  ===============================
+*/
+/* ------background------------*/
+.bg-primary{
+  background-color: #2F4A8A;
+}
+.btn.bg-primary:hover{
+  background-color: #012F54;
+}
+.bg-secondary{
+  background-color: #263045;
+}
+.btn.bg-secondary:hover{
+  background-color: #2F4A8A;
+}
+
+/*------------text-------------*/
+.text-primary{
+  color: #2F4A8A;
+}
+.text-secondary{
+  color: #263045;
+}
+
+/* ----------- border ---------- */
+.border-primary{
+  border-color: #2F4A8A;
+}
+/* --------- other --------- */
+
+.h-banner-300{
+  height: 300px;
+}
+
+.text-2-5xl{
+  font-size : 26px !important;
+}
+
+.h-0-25{
+  height: 1px;
+}
+
+.w-0-25{
+  width: 1px;
+}
+
+.w-h-round{
+  width: 14px;
+  height: 14px;
+}
+
+.top-100-px{
+  top: 100px;
+}
+
+.btn-topbar{
+  background-color: #2F4A8A;
+}
+
+.btn-topbar:hover{
+  background-color: #fff;
+  color: #263045;
+}
+
+/* font  */
+.font-bizzare {
+  font-family: 'Playfair Display', serif;
+}
+

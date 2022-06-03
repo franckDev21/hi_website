@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="../dist/main.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  <header>
+      <!-- top bar -->
+      <div class="bg-secondary hidden xl:block">
+          <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-white text-sm mr-4 opacity-90 flex items-center">
+                  <span class="w-4 h-4 bg-white mr-2 inline-block cursor-pointer -translate-y-0.5"></span> 
+                  24 Tech Roqad st Ny 10023
+                </span>
+                <span class="spance w-0-25 bg-gray-50 bg-opacity-20 h-4 inline-block"></span>
+                <span class="text-white text-sm ml-4 opacity-90 flex items-center cursor-pointer">
+                  <span class="w-4 h-4 bg-white mr-2 inline-block  -translate-y-0.5 cursor-pointer"></span> 
+                  info@example.com
+                </span>
+            </div>
+            <div class="flex items-center">
+                <span class="text-white text-sm mr-4 opacity-90 flex items-center">
+                  <span class="w-4 h-4 bg-white mr-2 inline-block cursor-pointer -translate-y-0.5"></span>
+                  Office Hour: 08:00am - 6:00pm
+                </span>
+                <span class="spance w-0-25 bg-gray-50 bg-opacity-20 h-4 inline-block"></span>
+                <span class="ml-4 flex items-center mr-4">
+                    <span class="w-4 h-4 bg-white mr-2 inline-block cursor-pointer"></span>
+                    <span class="w-4 h-4 bg-white mr-2 inline-block cursor-pointer"></span>
+                    <span class="w-4 h-4 bg-white mr-2 inline-block cursor-pointer"></span>
+                    <span class="w-4 h-4 bg-white mr-2 inline-block cursor-pointer"></span>
+                </span>
+                <button class="text-white text-sm px-8 bg-primary py-4 cursor-pointer transition-all btn-topbar font-semibold">Get A Quote</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="bg-green-500 relative">
+            <!--Start Mobile Navigation -->
+            <nav class="nav-mobile xl:hidden bg-white shadow-2xl border-b border-gray-50">
+                <div class="container mx-auto px-4 py-3 flex items-center justify-between ">
+                    <div class="menu">
+                        <input type="checkbox" id="humberger-menu" hidden >
+                        <label for="humberger-menu" class="humberger-menu w-8  flex flex-col cursor-pointer">
+                            <span class="w-8 h-0.5 mb-1.5 bg-secondary"></span>
+                            <span class="w-8 h-0.5 mb-1.5 bg-secondary"></span>
+                            <span class="w-8 h-0.5 bg-secondary"></span>
+                        </label>
+                    </div>
+                    <a href="#"><img src="./assets/logo.png" class="w-40" alt="logo"></a>
+                    <div class="flex justify-between items-center">
+                        <button class="w-8 h-8 bg-primary rounded-md"></button>
+                        <button class="w-8 h-8 bg-secondary rounded-md ml-3 relative">
+                            <span class="absolute -top-1.5 -right-1/4 inline-block px-1 rounded-full text-xs text-white bg-primary">0</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Mobile Navigation -->
+
+            <!-- Start Desktop Navigation -->
+            <nav class="nav nav-desktop w-full bg-white bg-opacity-70 z-20 hidden xl:block  absolute top-0 right-0">
+              <div class="container  mx-auto flex justify-between items-center">
+                <a href="#"><img src="./assets/logo.png" class="w-40" alt="logo"></a>
+
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center">
+                        <div class="py-8 nav__link px-4 mr-2">
+                          <a>Home</span>
+                          <div class="menu shadow">
+                            <a href="#" class="menu__link block text-sm font-normal px-3 py-4">
+                              <span>Home page 1</span>
+                            </a>
+                            <a href="#" class="menu__link block text-sm font-normal px-3 py-4">
+                              <span>Home page 2</span>
+                            </a>
+                            <a href="#" class="menu__link block text-sm font-normal px-3 py-4">
+                              <span>Home page 3</span>
+                            </a>
+                            <a href="#" class="menu__link block text-sm font-normal px-3 py-4">
+                              <span>Home page 4</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="py-8 nav__link px-4 mr-2">
+                          <a href="#">Pages</a>
+                          <div class="menu shadow">
+                            <a href="#" class="menu__link block text-sm font-normal px-3 py-4">
+                              <span>About Us</span>
+                            </a>
+                            <a href="#" class="menu__link block text-sm font-normal px-3 py-4">
+                              <span>Services</span>
+                            </a>
+                            <a href="#" class="menu__link block text-sm font-normal px-3 py-4">
+                              <span>Out Expert</span>
+                            </a>
+                            <a href="#" class="menu__link block text-sm font-normal px-3 py-4">
+                              <span>FAQs</span>
+                            </a>
+                            <a href="#" class="menu__link block text-sm font-normal px-3 py-4">
+                              <span>Contact</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="py-8 nav__link px-4 mr-2">Services</div>
+                        <div class="py-8 nav__link px-4 mr-2">Project</div>
+                        <div class="py-8 nav__link px-4 mr-2">Blog</div>
+                        <div class="py-8 nav__link px-4 mr-2">Shop</div>
+                    </div>
+                    <span class="spance w-0-25 bg-gray-50 bg-opacity-20 h-4 inline-block"></span>
+                    
+                    <div class="flex justify-between items-center">
+                      <button class="w-8 h-8 bg-primary rounded-md"></button>
+                      <button class="w-8 h-8 bg-secondary rounded-md ml-3 relative">
+                          <span class="absolute -top-1.5 -right-1/4 inline-block px-1 rounded-full text-xs text-white bg-primary">0</span>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- End Desktop Navigation -->
+            
+            <!-- banner -->
+            <div class="banner lg:h-80 xl:py-96 z-10 h-banner-300 relative flex justify-center items-center">
+                <img src="./assets/bg-banner.jpeg" class="banner__img z-10 absolute w-full h-full object-cover " alt="bg">
+                <div class="banner__content relative z-20 w-90">
+                    <h1 class="font-bold text-secondary text-3xl text-center">Real-Time Monitoring Your <span class="text-primary">Infrstracture</span></h1>
+                    <div class="flex items-center justify-center mt-7">
+                        <button class="px-4 bg-primary btn text-white py-2 inline-block">Read More</button>
+                        <button class="px-4 bg-secondary btn text-white py-2 inline-block ml-4">Get Altech</button>
+                    </div>
+                </div>
+
+                <!-- <img src="./assets/bg-banner-2.jpeg" class="z-10 absolute w-full h-full object-cover " alt="bg">
+                <div class="banner__content relative z-20 w-90">
+                    <h1 class="font-bold text-secondary text-3xl text-center">Best <span class="text-primary">Platform</span> to Grow Your Bussiness</h1>
+                    <div class="flex items-center justify-center mt-7">
+                        <button class="px-4 bg-primary btn text-white py-2 inline-block">Discuss Your Project</button>
+                        <button class="px-4 text-secondary py-2 inline-block ml-4 font-semibold">Get Altech</button>
+                    </div>
+                </div> -->
+
+                <button class="banner__btn-left absolute top-1/2 -translate-y-1/2 left-2 w-5 h-5 bg-gray-800 bg-opacity-80 text-white flex justify-center items-center z-20 p-4 cursor-pointer"><</button>
+                <button class="banner__btn-right absolute top-1/2 -translate-y-1/2 right-2 w-5 h-5 bg-gray-800 bg-opacity-80 text-white flex justify-center items-center z-20 p-4 cursor-pointer">></button>
+            </div>
+      </div>
+
+  </header>
+
+  <main>
+    <!--  -->
+    <section class="mx-4 bg-secondary overflow-hidden">
+        <div class="flex mx-2 items-center justify-start bg-primary py-8 pl-4">
+            <span class="w-14 h-14 bg-secondary block "></span>
+            <div class="pl-4">
+                <span class="text-white font-bold block">Trusted Services</span>
+                <span class="text-white block">We Are Trusted Our Customers</span>
+            </div>
+        </div>
+        <div class="flex mx-2 items-center justify-start bg-secondary py-8 pl-4">
+            <span class="w-14 h-14 bg-primary block "></span>
+            <div class="pl-4">
+                <span class="text-white font-bold block">24/7 Support</span>
+                <span class="text-white block">000 7845 114- 123 4567 890</span>
+            </div>
+        </div>
+        <div class="flex mx-2 items-center justify-start bg-primary py-8 pl-4">
+            <span class="w-14 h-14 bg-secondary block "></span>
+            <div class="pl-4">
+                <span class="text-white font-bold block">Expert & Professional</span>
+                <span class="text-white block">We Are Trusted Our Customers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about mx-4 pt-12 pb-10">
+        <div class="mb-14">
+            <h5 class="text-primary font-semibold mb-1">About Us</h5>
+            <h1 class="text-2-5xl mb-10 relative about__title">
+                <span class="font-semibold text-secondary">We are here to IT Solution with 20 years of</span> <span class="font-bizzare text-primary">experience</span>
+            </h1>
+            <p class="text-gray-500 text-sm leading-6 pb-3">
+                Web designing in a powerful way of just not an only professions, however, in a passion for our Company. We have to a tendency to believe the idea that smart looking of any website is the first impression on visitors. And the smart design of any website is the starting point
+            </p>
+            <p class="text-gray-500 text-sm leading-6 pb-3">
+                We have a special team for website style who has been involved in designing professional websites of all categories.
+            </p>
+
+            <div class="mt-4">
+                <div>
+                    <span class="text-sm mb-3 text-gray-800 flex items-center justify-start">
+                      <span class="w-h-round border border-primary rounded-full mr-3"></span>
+                      <span>Web And Mobile Application</span>
+                    </span>
+                    <span class="text-sm mb-3 text-gray-800 flex items-center justify-start">
+                      <span class="w-h-round border border-primary rounded-full mr-3"></span>
+                      <span>New Domain Registration</span>
+                    </span>
+                    <span class="text-sm mb-3 text-gray-800 flex items-center justify-start">
+                      <span class="w-h-round border border-primary rounded-full mr-3"></span>
+                      <span>Data Text Synchronization</span>
+                    </span>
+                </div>
+                <div>
+                    <span class="text-sm mb-3 text-gray-800 flex items-center justify-start">
+                      <span class="w-h-round border border-primary rounded-full mr-3"></span>
+                      <span>Improving Our Website Design</span>
+                    </span>
+                    <span class="text-sm mb-3 text-gray-800 flex items-center justify-start">
+                      <span class="w-h-round border border-primary rounded-full mr-3"></span>
+                      <span>Web & Email Hosting Services</span>
+                    </span>
+                    <span class="text-sm mb-3 text-gray-800 flex items-center justify-start">
+                      <span class="w-h-round border border-primary rounded-full mr-3"></span>
+                      <span>Artificial Intelligence Web App</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="h-0-25 bg-gray-400 opacity-40 mt-8"></div>
+
+            <div class="mt-8">
+                Call to ask <a href="#" class="underline">any question</a><span class="font-bold text-lg">: 123-456-7890</span> or <span class="font-bold text-lg">456-789-1430</span>
+            </div>
+        </div>
+        <div class="relative about__img">
+            <img src="./assets/single-img-one.png" alt="">
+            <div class="absolute rounded-lg top-100-px right-0 text-white text-lg bg-primary text-center">American IT Solutions Association AIA.</div>
+        </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
