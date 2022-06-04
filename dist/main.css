@@ -47,6 +47,15 @@
   width: 180px;
   padding: 20px;
 }
+@media (min-width: 1280px) {
+  .about__img > div:first-of-type {
+    padding: 1.3rem;
+    font-size: 23px;
+    line-height: initial;
+    width: 220px;
+    min-height: 100px;
+  }
+}
 
 .nav__link {
   font-weight: 500;
