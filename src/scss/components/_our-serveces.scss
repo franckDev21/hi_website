@@ -1,10 +1,12 @@
-.our-services{
+.our-serveces{
+    background-image: url(../src/assets/row-bgimage.png);
     &__title{
         &::after {
             width: 52px;
             bottom: -20px;
             height: 4px;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             top: auto;
             position: absolute;
             content: '';
